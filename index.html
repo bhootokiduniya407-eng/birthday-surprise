@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Nandini ❤️</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#2b1055,#7597de);
+overflow:hidden;
+}
+
+.container{
+text-align:center;
+background:rgba(255,255,255,.12);
+padding:35px;
+border-radius:25px;
+backdrop-filter:blur(15px);
+box-shadow:0 0 35px rgba(255,0,120,.5);
+animation:fade 1.5s;
+}
+
+h1{
+font-size:42px;
+color:#fff;
+text-shadow:0 0 15px hotpink;
+}
+
+h2{
+margin-top:10px;
+font-size:34px;
+color:#ff6fae;
+}
+
+p{
+margin:20px 0;
+font-size:22px;
+color:#fff;
+}
+
+button{
+padding:16px 35px;
+border:none;
+border-radius:50px;
+background:#ff0077;
+color:#fff;
+font-size:20px;
+cursor:pointer;
+box-shadow:0 0 25px #ff0077;
+transition:.3s;
+}
+
+button:hover{
+transform:scale(1.08);
+}
+
+@keyframes fade{
+from{
+opacity:0;
+transform:scale(.8);
+}
+to{
+opacity:1;
+transform:scale(1);
+}
+}
+.container{
+position:relative;
+z-index:2;
+}
+
+.heart{
+position:fixed;
+bottom:-50px;
+font-size:22px;
+animation:float 8s linear infinite;
+opacity:.8;
+}
+
+@keyframes float{
+0%{
+transform:translateY(0) scale(.5);
+opacity:0;
+}
+20%{
+opacity:1;
+}
+100%{
+transform:translateY(-120vh) scale(1.5);
+opacity:0;
+}
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🎂 Happy Birthday</h1>
+
+<h2>Nandini ❤️</h2>
+
+<p>My Chota Don 💖</p>
+
+<button onclick="showSurprise()">
+🎁 Open My Surprise
+</button>
+
+</div><script>
+function showSurprise(){
+
+document.body.innerHTML=`
+
+<div style="height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+background:linear-gradient(135deg,#ff416c,#ff4b2b);
+color:white;
+text-align:center;
+padding:20px;">
+
+<h1 style="font-size:45px;">
+🎉 Happy Birthday 🎉
+</h1>
+
+<h2 style="color:yellow;">
+Nandini ❤️
+</h2>
+
+<p style="font-size:22px;max-width:600px;line-height:1.8;">
+
+Dear Chota Don ❤️<br><br>
+
+Aaj ka din sirf tumhara hai. 🥹💖<br>
+
+Main dua karta hoon ki tum hamesha khush raho, muskurati raho aur tumhare saare sapne poore ho. 🌸✨<br><br>
+
+Thank you meri life me aane ke liye. ❤️<br>
+
+I Love You Forever. 💍❤️<br><br>
+
+<b>— Tumhara Rishu ❤️</b>
+
+</p>
+
+<button onclick="location.reload()"
+style="padding:15px 35px;
+border:none;
+border-radius:40px;
+font-size:20px;
+background:white;
+color:#ff416c;">
+
+❤️ Back
+
+</button>
+
+</div>
+
+`;
+
+}
+</script>
+<script>
+for(let i=0;i<30;i++){
+  let heart=document.createElement("div");
+  heart.className="heart";
+  heart.innerHTML="💖";
+  heart.style.left=Math.random()*100+"vw";
+  heart.style.animationDuration=(5+Math.random()*5)+"s";
+  heart.style.fontSize=(18+Math.random()*22)+"px";
+  document.body.appendChild(heart);
+}
+
+</script>
+</body>
+</html>
